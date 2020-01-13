@@ -7,6 +7,7 @@ import java.awt.event.*;
 public class JogoMemoria extends JFrame implements ActionListener, MouseListener {
 	private JPanel panel;
 	private final int CARD_COUNT = 5;
+	//teste
 	private int score, pairs, numbers[];
 	private int tempIndex = -1;
 	private JLabel labelScore;
@@ -14,7 +15,7 @@ public class JogoMemoria extends JFrame implements ActionListener, MouseListener
 	private JButton tempButton, button1[], button2[];
 	private Random r;
 	public JogoMemoria() {
-		super("Jogo da Memória");
+		super("Jogo da Memï¿½ria");
 		
 		this.setSize(900, 600);
 		this.setResizable(false);
@@ -91,13 +92,13 @@ public class JogoMemoria extends JFrame implements ActionListener, MouseListener
 				new Resultado(score).setVisible(true);
 				this.setVisible(false);
 			}
-			System.out.println("Carta nº: "+numbers[index]+"\nErros: "+index+"\n-------------");
+			System.out.println("Carta nï¿½: "+numbers[index]+"\nErros: "+index+"\n-------------");
 		}
 		else {
 			tempIndex = -1;
 			score -= 5;
 			tempButton.setForeground(transparent);
-			labelScore.setText("Pontuação: "+score);
+			labelScore.setText("Pontuaï¿½ï¿½o: "+score);
 			res.setForeground(transparent);
 		}
 	}
