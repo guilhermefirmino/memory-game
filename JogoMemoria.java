@@ -50,7 +50,7 @@ public class JogoMemoria extends JFrame implements ActionListener, MouseListener
 		for (int i = 0; i < 5; i++) {
 		button1[i] = new JButton(""+numbers[i]);
 			button1[i].setBounds(r.nextInt(750)+10, r.nextInt(420)+30, 120, 150);
-			button1[i].setBackground(Color.GREEN);
+			button1[i].setBackground(Color.BLUE);
 			button1[i].setForeground(transparent);
 			button1[i].addActionListener(this);
 			button1[i].addMouseListener(this);
